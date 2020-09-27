@@ -1,9 +1,9 @@
-defmodule NotionEx.MixProject do
+defmodule NotionAPI.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :notion_ex,
+      app: :notion_api,
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,

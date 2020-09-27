@@ -1,4 +1,4 @@
-defmodule NotionEx.Client do
+defmodule NotionAPI.Client do
   alias Finch.Response
 
   def child_spec do
@@ -14,8 +14,8 @@ defmodule NotionEx.Client do
     url = "https://www.notion.so/api/v3/#{path}"
     headers = [
       {"content-type", "application/json"},
-      # TODO: secret.exs using Mix.Config
-      {"cookie", "token_v2=#{Application.get_env(:my_notion_helper, :token_v2)}"}
+      # TODO: Get token
+      {"cookie", "token_v2=token_v2"}
     ]
 
     :post
